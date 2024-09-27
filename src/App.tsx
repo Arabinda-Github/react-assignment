@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 import Person from './Component/Person';
 import { Iperson } from './Model/Iperson';
-
+import Login from './Component/Login';
 const pdata:Iperson ={
   tableDetails:[
     {name:'Ram',email:'test@gamil.com',phone:9366545524,address:[{plot_No:93,landMark:'BBSR'}]},
@@ -15,10 +14,12 @@ const pdata:Iperson ={
 function App() {
   return (
     <div className="App">
-      <div><h5>{process.env.REACT_APP_API_URL}</h5></div>
-      <Person persondata={pdata}/>
+      {/* <div><h5>{process.env.REACT_APP_API_URL}</h5></div>
+      <Person persondata={pdata}/> */}
+      <Login/>
     </div>
   );
 }
+
 
 export default App;
